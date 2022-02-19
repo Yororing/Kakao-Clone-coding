@@ -5,10 +5,15 @@
 @import "Component/status.css";
 @import "Component/nav-bar.css";
 @import "Component/screen-header.css";
+@import "Component/user-component.css";
+@import "Component/badge.css";
+@import "Component/icon-row.css";
 /*Screens Second*/
 @import "Screens/login.css";
 @import "Screens/freinds.css";
-@import "Component/user-component.css";
+@import "Screens/find.css";
+@import "Screens/more.css";
+
 
 body {
     color: #2e363e;
