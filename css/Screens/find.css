@@ -61,6 +61,8 @@
 .open-post__member-status{
     color: #ffb0e0;
     background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
 }
 .open-post-photo{
     position: relative;
@@ -82,6 +84,27 @@
     right: 10px;
     font-size: 12px;
 }
+
+@keyframes heartBeat {
+    0%{
+        color: #fff;
+        transform: none;
+    }
+    50%{
+        color: red;
+        transform: scale(1.2);
+    }
+    100%{
+        color: #fff;
+        transform: none;
+    }
+}
+
 .open-post__heart-count span{
     margin-left: 3px;
+}
+
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
 }
